@@ -55,20 +55,20 @@
     </nav>
   </header>
 
-  <!--==========================
-    Hero Section
-  ============================-->
-  <section id="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-container">
-      <h1 class="wow fadeInDown">A1 Transmission</h1>
-      <p class="hero-location wow fadeInUp" data-wow-delay="0.2s">Winnetka, CA</p>
-      <p class="hero-tagline wow fadeInUp" data-wow-delay="0.4s">"The job done right with <strong>YOU</strong> in mind"</p>
-      <a href="#services" class="btn-get-started wow fadeInUp" data-wow-delay="0.6s">Our Services</a>
-    </div>
-  </section>
-
   <main id="main">
+
+    <!--==========================
+      Hero Section
+    ============================-->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-container">
+        <h1 class="wow fadeInDown">A1 Transmission</h1>
+        <p class="hero-location wow fadeInUp" data-wow-delay="0.2s">Winnetka, CA</p>
+        <p class="hero-tagline wow fadeInUp" data-wow-delay="0.4s">"The job done right with <strong>YOU</strong> in mind"</p>
+        <a href="#services" class="btn-get-started wow fadeInUp" data-wow-delay="0.6s">Our Services</a>
+      </div>
+    </section>
 
     <!--==========================
       About Us Section
@@ -76,7 +76,7 @@
     <section id="about" aria-labelledby="about-heading">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">About Us</h2>
+          <h2 id="about-heading" class="section-title">About Us</h2>
           <div class="section-divider"></div>
           <p class="section-description">Our commitment to you</p>
         </div>
@@ -91,7 +91,7 @@
                 <i class="fas fa-thumbs-up"></i>
               </div>
               <div class="feature-content">
-                <h4>Best in Class Services</h4>
+                <h3>Best in Class Services</h3>
                 <p>Our technicians have 25+ years of experience and knowledge to repair your vehicle right the first time.</p>
               </div>
             </div>
@@ -100,7 +100,7 @@
                 <i class="fas fa-money-bill-wave"></i>
               </div>
               <div class="feature-content">
-                <h4>Best in Value</h4>
+                <h3>Best in Value</h3>
                 <p>All transmission repair is backed by 100,000 miles / 3 years (whichever comes first) warranty on parts &amp; labor.</p>
               </div>
             </div>
@@ -109,7 +109,7 @@
                 <i class="fas fa-star"></i>
               </div>
               <div class="feature-content">
-                <h4>BBB A+ Rating</h4>
+                <h3>BBB A+ Rating</h3>
                 <p>Get peace of mind knowing your vehicle is serviced by an A+ rated Better Business Bureau shop.</p>
               </div>
             </div>
@@ -126,7 +126,7 @@
         <div class="cta-inner wow fadeIn">
           <div class="row align-items-center">
             <div class="col-lg-8">
-              <h3>Get Your Free Quote Today</h3>
+              <h2>Get Your Free Quote Today</h2>
               <p>Call or email us at your convenience and be amazed by our value-packed repair services!</p>
             </div>
             <div class="col-lg-4 text-lg-end text-center mt-3 mt-lg-0">
@@ -140,10 +140,10 @@
     <!--==========================
       Services Section
     ============================-->
-    <section id="services">
+    <section id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Our Services</h2>
+          <h2 id="services-heading" class="section-title">Our Services</h2>
           <div class="section-divider"></div>
           <p class="section-description">Expert auto care you can trust</p>
         </div>
@@ -153,7 +153,7 @@
               <div class="service-icon">
                 <i class="fas fa-tools"></i>
               </div>
-              <h4>Automatic &amp; Manual Transmission Rebuild &amp; Repair</h4>
+              <h3>Automatic &amp; Manual Transmission Rebuild &amp; Repair</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
@@ -161,7 +161,7 @@
               <div class="service-icon">
                 <i class="fas fa-oil-can"></i>
               </div>
-              <h4>Transmission Full Fluid Flush Service</h4>
+              <h3>Transmission Full Fluid Flush Service</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -169,7 +169,7 @@
               <div class="service-icon">
                 <i class="fas fa-screwdriver-wrench"></i>
               </div>
-              <h4>Axle Differential Repair &amp; Drive Shaft Replacements</h4>
+              <h3>Axle Differential Repair &amp; Drive Shaft Replacements</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -177,7 +177,7 @@
               <div class="service-icon">
                 <i class="fas fa-truck-monster"></i>
               </div>
-              <h4>Transfer Case 4x4</h4>
+              <h3>Transfer Case 4x4</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -185,7 +185,7 @@
               <div class="service-icon">
                 <i class="fas fa-gear"></i>
               </div>
-              <h4>Clutch Service &amp; Repair</h4>
+              <h3>Clutch Service &amp; Repair</h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -193,7 +193,7 @@
               <div class="service-icon">
                 <i class="fas fa-circle-stop"></i>
               </div>
-              <h4>Brake Repair Service &amp; Brake System Fluid Services</h4>
+              <h3>Brake Repair Service &amp; Brake System Fluid Services</h3>
             </div>
           </div>
         </div>
@@ -206,10 +206,10 @@
     <!--==========================
       Reviews Section
     ============================-->
-    <section id="reviews">
+    <section id="reviews" aria-labelledby="reviews-heading">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">What Our Customers Say</h2>
+          <h2 id="reviews-heading" class="section-title">What Our Customers Say</h2>
           <div class="section-divider"></div>
           <p class="section-description">Don't just take our word for it — hear from our satisfied customers!</p>
         </div>
@@ -223,7 +223,7 @@
               <div class="review-author">
                 <div class="review-avatar">W</div>
                 <div>
-                  <h5>William K.</h5>
+                  <h4>William K.</h4>
                   <span>San Francisco, CA</span>
                 </div>
               </div>
@@ -238,7 +238,7 @@
               <div class="review-author">
                 <div class="review-avatar">R</div>
                 <div>
-                  <h5>Robert G.</h5>
+                  <h4>Robert G.</h4>
                   <span>Los Angeles, CA</span>
                 </div>
               </div>
@@ -253,7 +253,7 @@
               <div class="review-author">
                 <div class="review-avatar">J</div>
                 <div>
-                  <h5>Jae H.</h5>
+                  <h4>Jae H.</h4>
                   <span>Google Review</span>
                 </div>
               </div>
@@ -268,7 +268,7 @@
               <div class="review-author">
                 <div class="review-avatar">K</div>
                 <div>
-                  <h5>Kaylee L.</h5>
+                  <h4>Kaylee L.</h4>
                   <span>Google Review</span>
                 </div>
               </div>
@@ -281,17 +281,17 @@
     <!--==========================
       Contact Section
     ============================-->
-    <section id="contact">
+    <section id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Contact Us</h2>
+          <h2 id="contact-heading" class="section-title">Contact Us</h2>
           <div class="section-divider"></div>
           <p class="section-description">"You're just one call away from the best in class service"</p>
         </div>
       </div>
 
       <div class="map-container wow fadeIn">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28984.42487224644!2d-118.59094341911464!3d34.21267966335696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b098ce4aab9941!2sA1%20Transmission!5e0!3m2!1sen!2sus!4v1590011730728!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28984.42487224644!2d-118.59094341911464!3d34.21267966335696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b098ce4aab9941!2sA1%20Transmission!5e0!3m2!1sen!2sus!4v1590011730728!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps location of A1 Transmission"></iframe>
       </div>
 
       <div class="container mt-5">
@@ -301,7 +301,7 @@
               <div class="contact-icon">
                 <i class="fas fa-location-dot"></i>
               </div>
-              <h5>Address</h5>
+              <h3>Address</h3>
               <p>20146 Saticoy Blvd B1<br>Winnetka, CA 91306</p>
             </div>
           </div>
@@ -310,7 +310,7 @@
               <div class="contact-icon">
                 <i class="fas fa-clock"></i>
               </div>
-              <h5>Hours</h5>
+              <h3>Hours</h3>
               <p><strong>Mon–Fri</strong> 8AM–7PM<br><strong>Saturday</strong> 8AM–3PM</p>
             </div>
           </div>
@@ -319,7 +319,7 @@
               <div class="contact-icon">
                 <i class="fas fa-phone"></i>
               </div>
-              <h5>Phone</h5>
+              <h3>Phone</h3>
               <p><a href="tel:+18188825135">+1 (818) 882-5135</a></p>
             </div>
           </div>
@@ -328,7 +328,7 @@
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
               </div>
-              <h5>Email</h5>
+              <h3>Email</h3>
               <p><a href="mailto:A1TransmissionAutos@gmail.com">A1TransmissionAutos<br>@gmail.com</a></p>
             </div>
           </div>
