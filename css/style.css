@@ -646,6 +646,61 @@ section {
 }
 
 /*--------------------------------------------------------------
+  Service Card Link
+--------------------------------------------------------------*/
+.service-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-text);
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-link {
+  color: var(--primary-dark);
+}
+
+/*--------------------------------------------------------------
+  Mobile Sticky Call Bar
+--------------------------------------------------------------*/
+.mobile-call-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: var(--primary);
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-call-link {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mobile-call-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 56px;
+  }
+}
+
+/*--------------------------------------------------------------
   Footer
 --------------------------------------------------------------*/
 #footer {
