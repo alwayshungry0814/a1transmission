@@ -1,0 +1,15 @@
+# 301 each *.html URL to its clean canonical: apex host, no extension, no trailing slash.
+# index.html is the exception — its clean URL is /, not /index.
+# The trailing ! forces the redirect even though the HTML file exists.
+# Do not add a rewrite from the clean path back to *.html. Netlify pretty URLs
+# already serve the HTML file for the extensionless path, and pairing that
+# rewrite with these rules causes a redirect loop.
+/index.html                         /                                   301!
+/transmission-repair-winnetka.html  /transmission-repair-winnetka       301!
+/transmission-flush-winnetka.html   /transmission-flush-winnetka        301!
+/clutch-repair-winnetka.html        /clutch-repair-winnetka             301!
+/brake-repair-winnetka.html         /brake-repair-winnetka              301!
+/differential-repair-winnetka.html  /differential-repair-winnetka       301!
+/transfer-case-winnetka.html        /transfer-case-winnetka             301!
+/faq-transmission-problems.html     /faq-transmission-problems          301!
+/transmission-repair-canoga-park.html /transmission-repair-canoga-park  301!
