@@ -7,6 +7,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  background: linear-gradient(rgba(26, 26, 46, 0.78), rgba(26, 26, 46, 0.78)),
+    url(../img/main2.jpg) center center / cover no-repeat;
+  background-image: linear-gradient(rgba(26, 26, 46, 0.78), rgba(26, 26, 46, 0.78)),
+    image-set(
+      url(../img/main2.webp) type("image/webp"),
+      url(../img/main2.jpg) type("image/jpeg")
+    );
 }
 
 .service-hero-container {
