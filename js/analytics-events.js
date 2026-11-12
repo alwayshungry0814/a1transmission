@@ -50,4 +50,40 @@
       window.dataLayer.push(["event", name, params]);
     }
   });
+
+  // Iframe clicks do not bubble. A Google Maps embed takes focus, which
+  // blurs the window; activeElement is then that iframe. Fire once per page view.
+  var mapInteractionSent = false;
+
+  window.addEventListener("blur", function () {
+    if (mapInteractionSent) return;
+    window.setTimeout(function () {
+      if (mapInteractionSent) return;
+      var frames = document.getElementsByTagName("iframe");
+      var i;
+      for (i = 0; i < frames.length; i++) {
+        if (document.activeElement !== frames[i]) continue;
+        var src = (frames[i].getAttribute("src") || "").toLowerCase();
+        if (
+          src.indexOf("google.com/maps") === -1 &&
+          src.indexOf("maps.google.") === -1
+        ) {
+          return;
+        }
+        mapInteractionSent = true;
+        var mapParams = {
+          link_url: frames[i].src || "",
+          page_location: window.location.href,
+          click_location: "map"
+        };
+        window.dataLayer = window.dataLayer || [];
+        if (typeof window.gtag === "function") {
+          window.gtag("event", "map_interaction", mapParams);
+        } else {
+          window.dataLayer.push(["event", "map_interaction", mapParams]);
+        }
+        return;
+      }
+    }, 0);
+  });
 })();
