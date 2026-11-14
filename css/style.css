@@ -117,7 +117,16 @@ img {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-brand img {
+#header .navbar-brand {
+  margin-right: 12px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+#header .navbar-brand img {
+  height: auto;
+  width: 200px;
+  max-width: 46vw;
   transition: var(--transition);
 }
 
@@ -125,11 +134,11 @@ img {
 #header .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9);
   font-family: "Poppins", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
-  padding: 8px 14px;
+  letter-spacing: 0.4px;
+  padding: 8px 10px;
   position: relative;
   transition: var(--transition);
 }
@@ -138,8 +147,8 @@ img {
   content: "";
   position: absolute;
   bottom: 4px;
-  left: 14px;
-  right: 14px;
+  left: 10px;
+  right: 10px;
   height: 2px;
   background: var(--primary);
   transform: scaleX(0);
@@ -170,13 +179,97 @@ img {
   box-shadow: none;
 }
 
+/* Crawlable service and area menus. The links stay in the HTML. */
+#header .navbar-nav .nav-item.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header .nav-item.dropdown > span.nav-link {
+  cursor: default;
+}
+
+#header .nav-item.dropdown > span.nav-link::after {
+  display: none;
+}
+
+#header .nav-caret {
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 8px 8px 0;
+  line-height: 1;
+}
+
+#header .nav-caret:hover,
+#header .nav-caret:focus {
+  color: #fff;
+}
+
+#header .nav-caret:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+#header .dropdown-menu {
+  background: var(--dark-nav);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  min-width: 240px;
+  margin-top: 0;
+  padding: 6px 0;
+  z-index: 1000;
+}
+
+#header .dropdown-item {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: normal;
+  padding: 8px 16px;
+}
+
+#header .dropdown-item:hover,
+#header .dropdown-item:focus,
+#header .dropdown-item.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #header .nav-item.dropdown:hover > .dropdown-menu,
+  #header .nav-item.dropdown:focus-within > .dropdown-menu {
+    display: block;
+    top: calc(100% + 22px);
+    left: auto;
+    right: 0;
+  }
+
+  /* Keeps the menu open while the pointer crosses the gap under the nav link. */
+  #header .nav-item.dropdown > .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -22px;
+    height: 22px;
+  }
+}
+
 /* Mobile nav dropdown */
 @media (max-width: 991px) {
   #header .navbar-collapse {
-    background: var(--dark-nav);
+    background: #1a1a2e;
     margin: 12px -12px 0;
     padding: 12px 20px 20px;
     border-radius: 0 0 var(--radius) var(--radius);
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
   }
 
   #header .navbar-nav .nav-link {
@@ -186,6 +279,32 @@ img {
 
   #header .navbar-nav .nav-link::after {
     display: none;
+  }
+
+  #header .navbar-nav .nav-item.dropdown {
+    display: block;
+  }
+
+  #header .nav-caret {
+    display: none;
+  }
+
+  #header .dropdown-menu {
+    display: block;
+    position: static;
+    float: none;
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 0 8px 12px;
+  }
+
+  #header .dropdown-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   }
 }
 

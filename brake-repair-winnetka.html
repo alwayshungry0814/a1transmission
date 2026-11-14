@@ -30,6 +30,89 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/service-page.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://a1transmissionautos.com/brake-repair-winnetka#service",
+        "name": "Brake Repair in Winnetka, CA",
+        "serviceType": "Brake repair",
+        "url": "https://a1transmissionautos.com/brake-repair-winnetka",
+        "description": "Brake repair at A1 Transmission, 20146 Saticoy Street B1, Winnetka, CA 91306. The independent family shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley.",
+        "provider": {
+          "@type": "AutoRepair",
+          "@id": "https://a1transmissionautos.com/#business"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Winnetka"
+          },
+          {
+            "@type": "City",
+            "name": "Canoga Park"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Fernando Valley"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://a1transmissionautos.com/brake-repair-winnetka#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://a1transmissionautos.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Brake Repair in Winnetka, CA",
+            "item": "https://a1transmissionautos.com/brake-repair-winnetka"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does A1 Transmission repair brakes in Winnetka?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Brake repair is done at the independent family shop at 20146 Saticoy Street B1, Winnetka, CA 91306. The shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What warranty applies to the work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The warranty is 1 year or 12,000 miles, whichever comes first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the same shop check the transmission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Transmission diagnosis is free unless the transmission must be removed and opened. The shop works on almost all makes and models. CVTs are usually replaced rather than rebuilt."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -45,10 +128,30 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#reviews">Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="/#services">Services</a>
+              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show services"></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Transmission repair</a></li>
+                <li><a class="dropdown-item" href="/transmission-flush-winnetka">Transmission flush</a></li>
+                <li><a class="dropdown-item" href="/clutch-repair-winnetka">Clutch repair</a></li>
+                <li><a class="dropdown-item active" href="/brake-repair-winnetka" aria-current="page">Brake repair</a></li>
+                <li><a class="dropdown-item" href="/differential-repair-winnetka">Differential repair</a></li>
+                <li><a class="dropdown-item" href="/transfer-case-winnetka">Transfer case repair</a></li>
+                <li><a class="dropdown-item" href="/free-transmission-diagnosis">Free transmission diagnosis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link">Areas</span>
+              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show areas"></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Winnetka</a></li>
+                <li><a class="dropdown-item" href="/transmission-repair-canoga-park">Canoga Park</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/faq-transmission-problems">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +162,7 @@
 
     <section class="service-hero">
       <div class="service-hero-container">
-        <p class="service-hero-breadcrumb"><a href="/">Home</a> &rsaquo; Services</p>
+        <p class="service-hero-breadcrumb"><a href="/">Home</a> &rsaquo; Brake Repair in Winnetka, CA</p>
         <h1>Brake Repair Service in Winnetka, CA</h1>
         <p class="service-hero-sub">Brake Pads, Rotors &amp; Brake Fluid Service — All Makes &amp; Models</p>
         <a href="tel:+18188825135" class="btn-get-started">Call (818) 882-5135</a>
@@ -73,7 +176,7 @@
 
             <h2>Brake Service in Winnetka &amp; the San Fernando Valley</h2>
             <p>Your brakes are the most critical safety system on your vehicle. Don't wait until it's too late. At A1 Transmission in Winnetka, CA, we provide comprehensive brake repair and brake system fluid services for all makes and models — domestic and foreign, cars, trucks, and SUVs.</p>
-            <p>With over 30 years of auto repair experience serving Winnetka, Chatsworth, <a href="/transmission-repair-canoga-park">Canoga Park</a>, Northridge, and the greater San Fernando Valley, we know brakes. Our certified technicians will inspect your entire brake system, explain exactly what's needed, and get your vehicle stopping safely — at a price that beats the dealership.</p>
+            <p>The shop opened in April 1995 and serves Winnetka, the San Fernando Valley, and drivers who come from Canoga Park for <a href="/transmission-repair-canoga-park">transmission repair in Canoga Park</a>. Brake repair is done at the same shop as <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a>. We inspect the brake system and explain what we find.</p>
 
             <h2>Signs You Need Brake Service</h2>
             <ul class="service-list">
@@ -100,9 +203,9 @@
 
             <h2>Our Brake Repair Process</h2>
             <ol class="service-steps">
-              <li><strong>Free Brake Inspection:</strong> We perform a thorough multi-point brake inspection — pads, rotors, calipers, brake lines, and fluid — at no charge.</li>
+              <li><strong>Inspection:</strong> We inspect the pads, rotors, calipers, brake lines, and fluid.</li>
               <li><strong>Clear Estimate:</strong> We walk you through exactly what we found and give you a transparent quote before touching anything.</li>
-              <li><strong>Quality Parts:</strong> We install high-quality brake components that meet or exceed OEM specifications.</li>
+              <li><strong>Parts:</strong> We install the brake components the repair calls for.</li>
               <li><strong>Safety Test:</strong> After the repair, we test your brakes thoroughly to confirm proper stopping power before handing you back your keys.</li>
             </ol>
 
@@ -110,15 +213,24 @@
             <p>Brake fluid is hygroscopic — it absorbs moisture over time, which lowers its boiling point and can lead to brake fade or failure. Most manufacturers recommend flushing your brake fluid every 2 years or 30,000 miles. Our brake system fluid flush removes contaminated fluid and replaces it with fresh fluid to restore full braking performance and protect your hydraulic components.</p>
 
             <h2>Warranty</h2>
-            <p>All brake repairs at A1 Transmission are backed by our <strong>12,000-mile / 1-year warranty</strong> on parts and labor. Your safety is our priority — we won't let you leave until we know your brakes are performing properly.</p>
-            <p>The same Winnetka shop also does <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a>.</p>
+            <p>The warranty is 1 year or 12,000 miles, whichever comes first.</p>
+            <p>Transmission diagnosis at this shop is on the <a href="/free-transmission-diagnosis">free transmission diagnosis</a> page.</p>
 
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <p>These answers match the <a href="/free-transmission-diagnosis">free transmission diagnosis</a> page, <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a>, and <a href="/transmission-repair-canoga-park">transmission repair in Canoga Park</a>.</p>
+            <h3>Does A1 Transmission repair brakes in Winnetka?</h3>
+            <p>Yes. Brake repair is done at the independent family shop at 20146 Saticoy Street B1, Winnetka, CA 91306. The shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley.</p>
+            <h3>What warranty applies to the work?</h3>
+            <p>The warranty is 1 year or 12,000 miles, whichever comes first.</p>
+            <h3>Can the same shop check the transmission?</h3>
+            <p>Yes. Transmission diagnosis is free unless the transmission must be removed and opened. The shop works on almost all makes and models. CVTs are usually replaced rather than rebuilt.</p>
           </div>
           <div class="col-lg-4">
             <div class="service-sidebar">
               <h3>Get a Free Quote</h3>
-              <p>Hearing a squeal? Call or text us — we'll inspect your brakes for free.</p>
+              <p>Hearing a squeal? Call or text for a brake quote.</p>
               <a href="tel:+18188825135" class="sidebar-call-btn"><i class="fas fa-phone"></i> (818) 882-5135</a>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=A1+Transmission+20146+Saticoy+St+B1+Winnetka+CA+91306" class="sidebar-text-btn"><i class="fas fa-location-dot"></i> Get directions</a>
               <a href="sms:+18188825135" class="sidebar-text-btn"><i class="fas fa-sms"></i> Text Us</a>
               <hr>
               <h3>Hours</h3>
@@ -129,6 +241,7 @@
               <hr>
               <h3>Other Services</h3>
               <ul class="sidebar-links">
+                <li><a href="/free-transmission-diagnosis">Free transmission diagnosis</a></li>
                 <li><a href="/faq-transmission-problems">Transmission Problems FAQ</a></li>
                 <li><a href="/transmission-repair-winnetka">Transmission repair and rebuild in Winnetka</a></li>
                 <li><a href="/clutch-repair-winnetka">Clutch Repair</a></li>
@@ -156,6 +269,10 @@
           <a href="/#about">About</a>
           <a href="/#services">Services</a>
           <a href="/#reviews">Reviews</a>
+          <a href="/faq-transmission-problems">FAQ</a>
+          <a href="/transmission-repair-winnetka">Winnetka</a>
+          <a href="/transmission-repair-canoga-park">Canoga Park</a>
+          <a href="/free-transmission-diagnosis">Free diagnosis</a>
           <a href="/#contact">Contact</a>
         </div>
         <div class="footer-contact">
