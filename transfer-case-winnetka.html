@@ -30,6 +30,89 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/service-page.css" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://a1transmissionautos.com/transfer-case-winnetka#service",
+        "name": "Transfer Case Repair in Winnetka, CA",
+        "serviceType": "Transfer case repair",
+        "url": "https://a1transmissionautos.com/transfer-case-winnetka",
+        "description": "Transfer case and 4x4 repair at A1 Transmission, 20146 Saticoy Street B1, Winnetka, CA 91306. The independent family shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley.",
+        "provider": {
+          "@type": "AutoRepair",
+          "@id": "https://a1transmissionautos.com/#business"
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Winnetka"
+          },
+          {
+            "@type": "City",
+            "name": "Canoga Park"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Fernando Valley"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://a1transmissionautos.com/transfer-case-winnetka#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://a1transmissionautos.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Transfer Case Repair in Winnetka, CA",
+            "item": "https://a1transmissionautos.com/transfer-case-winnetka"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does A1 Transmission repair transfer cases in Winnetka?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Transfer case repair is done at the independent family shop at 20146 Saticoy Street B1, Winnetka, CA 91306. The shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What warranty applies to the work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The warranty is 1 year or 12,000 miles, whichever comes first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the same shop check the transmission?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Transmission diagnosis is free unless the transmission must be removed and opened. The shop works on almost all makes and models. CVTs are usually replaced rather than rebuilt."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -45,10 +128,30 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link active" href="/#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#reviews">Reviews</a></li>
-            <li class="nav-item"><a class="nav-link" href="/#contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="/#services">Services</a>
+              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show services"></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Transmission repair</a></li>
+                <li><a class="dropdown-item" href="/transmission-flush-winnetka">Transmission flush</a></li>
+                <li><a class="dropdown-item" href="/clutch-repair-winnetka">Clutch repair</a></li>
+                <li><a class="dropdown-item" href="/brake-repair-winnetka">Brake repair</a></li>
+                <li><a class="dropdown-item" href="/differential-repair-winnetka">Differential repair</a></li>
+                <li><a class="dropdown-item active" href="/transfer-case-winnetka" aria-current="page">Transfer case repair</a></li>
+                <li><a class="dropdown-item" href="/free-transmission-diagnosis">Free transmission diagnosis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <span class="nav-link">Areas</span>
+              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show areas"></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Winnetka</a></li>
+                <li><a class="dropdown-item" href="/transmission-repair-canoga-park">Canoga Park</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/faq-transmission-problems">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="/#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -59,7 +162,7 @@
 
     <section class="service-hero">
       <div class="service-hero-container">
-        <p class="service-hero-breadcrumb"><a href="/">Home</a> &rsaquo; Services</p>
+        <p class="service-hero-breadcrumb"><a href="/">Home</a> &rsaquo; Transfer Case Repair in Winnetka, CA</p>
         <h1>Transfer Case &amp; 4x4 Repair in Winnetka, CA</h1>
         <p class="service-hero-sub">Four-Wheel Drive &amp; All-Wheel Drive Specialists — Trucks, SUVs &amp; 4x4s</p>
         <a href="tel:+18188825135" class="btn-get-started">Call (818) 882-5135</a>
@@ -73,7 +176,7 @@
 
             <h2>Transfer Case &amp; 4WD Repair in Winnetka</h2>
             <p>The transfer case is the heart of your four-wheel drive or all-wheel drive system. It distributes power from your transmission to both the front and rear axles, giving you the traction you need on challenging terrain and slippery roads. When the transfer case fails, your 4WD system stops working — and driving with a damaged transfer case can cause serious harm to your drivetrain.</p>
-            <p>At A1 Transmission in Winnetka, CA, our technicians have over 30 years of experience repairing transfer cases on trucks, SUVs, and 4x4 vehicles of all makes and models. We serve Winnetka, Chatsworth, <a href="/transmission-repair-canoga-park">Canoga Park</a>, Northridge, Reseda, and the entire San Fernando Valley.</p>
+            <p>The shop opened in April 1995 and serves Winnetka and the San Fernando Valley, including drivers who come from Canoga Park for <a href="/transmission-repair-canoga-park">transmission repair in Canoga Park</a>. Transmission work at the same shop is on the <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a> page.</p>
 
             <h2>Signs of a Failing Transfer Case</h2>
             <ul class="service-list">
@@ -100,10 +203,10 @@
 
             <h2>Our Diagnostic &amp; Repair Process</h2>
             <ol class="service-steps">
-              <li><strong>Free Diagnosis:</strong> We inspect your transfer case, 4WD shift system, and related components to identify exactly what's wrong.</li>
+              <li><strong>Inspection:</strong> We inspect the transfer case, 4WD shift system, and related components.</li>
               <li><strong>Honest Estimate:</strong> We provide a clear, written estimate before starting any work. No hidden fees, no surprises.</li>
-              <li><strong>Expert Repair or Rebuild:</strong> Depending on the severity of the damage, we'll recommend either a targeted repair or a full rebuild using quality components.</li>
-              <li><strong>Fluid Service:</strong> We flush and refill the transfer case with the correct manufacturer-spec fluid as part of every repair.</li>
+              <li><strong>Repair or rebuild:</strong> Depending on the damage, we recommend a repair or a rebuild.</li>
+              <li><strong>Fluid Service:</strong> We flush and refill the transfer case with the fluid that unit uses.</li>
               <li><strong>Test &amp; Verify:</strong> We test your 4WD system thoroughly — engaging and disengaging all modes — before returning your vehicle.</li>
             </ol>
 
@@ -111,15 +214,23 @@
             <p>Like your transmission and differential, the transfer case relies on clean fluid to lubricate its internal gears, chains, and bearings. Neglected transfer case fluid becomes contaminated and breaks down, accelerating wear and leading to expensive failures. We recommend inspecting your transfer case fluid every 30,000 miles and replacing it per your manufacturer's schedule — especially if you tow, off-road, or drive in stop-and-go traffic regularly.</p>
 
             <h2>Warranty</h2>
-            <p>All transfer case and 4x4 repairs at A1 Transmission are backed by our <strong>12,000-mile / 1-year warranty</strong> on parts and labor. Call today for a free inspection — don't let a failing transfer case leave you without 4WD when you need it most.</p>
-            <p>Transmission work at this shop is on the <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a> page.</p>
+            <p>The warranty is 1 year or 12,000 miles, whichever comes first. Transmission diagnosis is covered on the <a href="/free-transmission-diagnosis">free transmission diagnosis</a> page.</p>
 
+            <h2 id="faq">Frequently Asked Questions</h2>
+            <p>These answers match the <a href="/free-transmission-diagnosis">free transmission diagnosis</a> page, <a href="/transmission-repair-winnetka">transmission repair and rebuild in Winnetka</a>, and <a href="/transmission-repair-canoga-park">transmission repair in Canoga Park</a>.</p>
+            <h3>Does A1 Transmission repair transfer cases in Winnetka?</h3>
+            <p>Yes. Transfer case repair is done at the independent family shop at 20146 Saticoy Street B1, Winnetka, CA 91306. The shop opened in April 1995 and serves Winnetka, Canoga Park, and the San Fernando Valley.</p>
+            <h3>What warranty applies to the work?</h3>
+            <p>The warranty is 1 year or 12,000 miles, whichever comes first.</p>
+            <h3>Can the same shop check the transmission?</h3>
+            <p>Yes. Transmission diagnosis is free unless the transmission must be removed and opened. The shop works on almost all makes and models. CVTs are usually replaced rather than rebuilt.</p>
           </div>
           <div class="col-lg-4">
             <div class="service-sidebar">
               <h3>Get a Free Quote</h3>
-              <p>4WD acting up? Call or text us for a free transfer case inspection.</p>
+              <p>4WD acting up? Call or text about the transfer case.</p>
               <a href="tel:+18188825135" class="sidebar-call-btn"><i class="fas fa-phone"></i> (818) 882-5135</a>
+              <a href="https://www.google.com/maps/dir/?api=1&amp;destination=A1+Transmission+20146+Saticoy+St+B1+Winnetka+CA+91306" class="sidebar-text-btn"><i class="fas fa-location-dot"></i> Get directions</a>
               <a href="sms:+18188825135" class="sidebar-text-btn"><i class="fas fa-sms"></i> Text Us</a>
               <hr>
               <h3>Hours</h3>
@@ -130,6 +241,7 @@
               <hr>
               <h3>Other Services</h3>
               <ul class="sidebar-links">
+                <li><a href="/free-transmission-diagnosis">Free transmission diagnosis</a></li>
                 <li><a href="/faq-transmission-problems">Transmission Problems FAQ</a></li>
                 <li><a href="/transmission-repair-winnetka">Transmission repair and rebuild in Winnetka</a></li>
                 <li><a href="/clutch-repair-winnetka">Clutch Repair</a></li>
@@ -157,6 +269,10 @@
           <a href="/#about">About</a>
           <a href="/#services">Services</a>
           <a href="/#reviews">Reviews</a>
+          <a href="/faq-transmission-problems">FAQ</a>
+          <a href="/transmission-repair-winnetka">Winnetka</a>
+          <a href="/transmission-repair-canoga-park">Canoga Park</a>
+          <a href="/free-transmission-diagnosis">Free diagnosis</a>
           <a href="/#contact">Contact</a>
         </div>
         <div class="footer-contact">
