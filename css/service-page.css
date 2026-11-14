@@ -53,6 +53,64 @@
   margin-bottom: 32px;
 }
 
+.service-hero .service-answer {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0 auto 28px;
+  max-width: 680px;
+}
+
+.service-hero .service-answer a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.service-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-directions {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: var(--transition);
+}
+
+.btn-directions:hover {
+  background: #fff;
+  color: var(--dark);
+}
+
+.service-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px 0 24px;
+}
+
+.service-cta .sidebar-call-btn,
+.service-cta .sidebar-text-btn {
+  margin-bottom: 0;
+}
+
+img.logo-img {
+  height: auto;
+  max-width: 100%;
+}
+
 .service-content {
   padding: 80px 0;
   background: #fff;
