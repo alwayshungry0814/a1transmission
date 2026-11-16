@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z56JL49E4P"></script>
+  <!-- Google tag (gtag.js). Loaded on window load; commands stay queued on dataLayer. -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-Z56JL49E4P');
+    window.addEventListener('load', function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-Z56JL49E4P';
+      document.head.appendChild(s);
+    });
   </script>
   <script src="js/analytics-events.js" defer></script>
   <title>Transfer Case &amp; 4x4 Repair in Winnetka, CA | A1 Transmission</title>
@@ -25,8 +30,12 @@
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/main2-sm.webp" type="image/webp" media="(max-width: 991px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/main2.webp" type="image/webp" media="(min-width: 992px)" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="css/icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/service-page.css" rel="stylesheet">
@@ -120,7 +129,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="/">
-          <img src="img/logo.png" alt="A1 Transmission — Winnetka Auto Repair" height="52">
+          <img src="img/logo.png" alt="A1 Transmission — Winnetka Auto Repair" width="518" height="52">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -161,6 +170,7 @@
   <main id="main">
 
     <section class="service-hero">
+      <div class="service-hero-overlay" aria-hidden="true"></div>
       <div class="service-hero-container">
         <p class="service-hero-breadcrumb"><a href="/">Home</a> &rsaquo; Transfer Case Repair in Winnetka, CA</p>
         <h1>Transfer Case &amp; 4x4 Repair in Winnetka, CA</h1>
@@ -261,7 +271,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="img/logo.png" alt="A1 Transmission" height="50">
+          <img src="img/logo.png" alt="A1 Transmission" width="498" height="50">
         </div>
         <p class="footer-tagline">"The job done right with YOU in mind"</p>
         <div class="footer-links">
@@ -293,8 +303,7 @@
     </a>
   </div>
 
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
     window.addEventListener('scroll', function() {
