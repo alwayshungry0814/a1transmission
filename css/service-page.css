@@ -7,13 +7,30 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: linear-gradient(rgba(26, 26, 46, 0.78), rgba(26, 26, 46, 0.78)),
-    url(../img/main2.jpg) center center / cover no-repeat;
-  background-image: linear-gradient(rgba(26, 26, 46, 0.78), rgba(26, 26, 46, 0.78)),
-    image-set(
+  /* JPEG stays in the shorthand so browsers that do not understand image-set() still paint.
+     Mobile uses the smaller WebP; wide screens keep the full-size photo.
+     The 78% scrim is .service-hero-overlay, layered the same way as the home hero. */
+  background: #1a1a2e url(../img/main2.jpg) center center / cover no-repeat;
+  background-image: image-set(
+    url(../img/main2-sm.webp) type("image/webp"),
+    url(../img/main2.jpg) type("image/jpeg")
+  );
+}
+
+@media (min-width: 992px) {
+  .service-hero {
+    background-image: image-set(
       url(../img/main2.webp) type("image/webp"),
       url(../img/main2.jpg) type("image/jpeg")
     );
+  }
+}
+
+.service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 26, 46, 0.78);
+  z-index: 0;
 }
 
 .service-hero-container {
