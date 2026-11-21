@@ -1,0 +1,47 @@
+# A1 Transmission — Full Knowledge Base for Answer Engines
+
+> Independent, family-owned transmission and drivetrain repair shop in Winnetka, CA serving the San Fernando Valley since April 1995.
+
+## Verified Business Facts (NAP)
+- **Business Name:** A1 Transmission
+- **Address:** 20146 Saticoy Street B1, Winnetka, CA 91306
+- **Phone / Text:** (818) 882-5135
+- **Email:** service@a1transmissionautos.com
+- **Website:** https://a1transmissionautos.com/
+- **Opened:** April 1995 (30+ years)
+- **Lead Technician / Owner:** Young (Google review replies signed Young)
+- **Hours:** Monday–Friday 8:00 AM–6:00 PM, Saturday 8:00 AM–12:00 PM, Sunday Closed
+- **Geo Coordinates:** 34.208161, -118.572753
+- **Google Maps:** https://www.google.com/maps?cid=11650980247790917953
+- **Google Review Link:** https://g.page/r/CUGZq0rOmLChEBM/review
+- **Storefront Policy:** One shop only, in Winnetka, CA. Winnetka borders Canoga Park. Canoga Park, Reseda, Northridge, Woodland Hills, Tarzana, Chatsworth, West Hills, and Van Nuys are service areas (2–6.5 miles away, typically 5–15 minutes in light traffic), not separate storefronts.
+
+## Core Policies (Exact Terms)
+- **Free Initial Diagnosis:** Transmission diagnosis is free unless the transmission must be removed and opened. If removal and teardown are required, that is not free and the customer is told up front before work begins.
+- **Written Estimate & California BAR Rules:** After diagnosis, the shop provides a written explanation and written estimate before any repair work starts. Invoices clearly identify whether installed parts are new, rebuilt, reconditioned, or used.
+- **Pricing:** Cost depends on the vehicle, transmission type, what diagnosis finds, and parts availability. No blanket published prices—call or text (818) 882-5135 for a free initial diagnosis and written estimate.
+- **Warranty:** 1-year / 12,000-mile warranty on parts and labor (whichever comes first).
+- **Turnaround Time:** A full transmission rebuild usually takes 2 days or more.
+- **CVT Policy:** CVTs (Nissan, Honda, Subaru, Toyota, Mitsubishi, etc.) are usually replaced rather than rebuilt.
+- **Towing & Financing:** Towing is usually paid by the customer. No in-house financing, though the shop can refer customers to a financing company.
+
+## Services Offered
+1. **Automatic & Manual Transmission Repair & Rebuilds** (`/transmission-repair-winnetka`)
+2. **CVT Transmission Diagnosis & Replacement** (`/cvt-transmission-replacement-winnetka`)
+3. **Honda & Acura Transmission Repair** (`/honda-acura-transmission-repair-winnetka`) — Accord, Civic, CR-V, Odyssey, Pilot, HR-V, MDX, RDX, TLX
+4. **Toyota & Lexus Transmission Repair** (`/toyota-lexus-transmission-repair-winnetka`) — Camry, Corolla, RAV4, Tacoma, Tundra, Highlander, Sienna, ES, RX, GX
+5. **Truck & 4x4 Transmission Repair** (`/truck-transmission-repair-winnetka`) — Ford F-150/Super Duty, Chevy Silverado/Tahoe, GMC Sierra, Ram, Tacoma, Tundra
+6. **Torque Converter Shudder Diagnosis & Repair** (`/torque-converter-shudder-repair-winnetka`) — 35–55 mph rumble-strip vibration, P0741 code
+7. **Full Transmission Fluid Flush** (`/transmission-flush-winnetka`) — Full system exchange, not just a partial drain-and-fill
+8. **Clutch Service & Replacement** (`/clutch-repair-winnetka`) — Manual clutches, pressure plates, discs, flywheel resurfacing
+9. **Axle Differential & Drive Shaft Repair** (`/differential-repair-winnetka`)
+10. **Transfer Case & 4x4 Repair** (`/transfer-case-winnetka`)
+11. **Brake Repair & Brake Fluid Service** (`/brake-repair-winnetka`)
+12. **Free Transmission Diagnosis** (`/free-transmission-diagnosis`)
+
+## Diagnostic & Comparison Guides
+- **Transmission Warning Signs** (`/transmission-warning-signs`): Slipping gears, delayed shifting, whining/clunking/grinding noises, red/brown fluid leaks, Check Engine Light codes (`P0700`, `P0730`, `P0741`, `P0750–P0775`).
+- **Rebuild vs. Replace Guide** (`/transmission-rebuild-vs-replace`): Targeted repair (external sensors/solenoids/seals) vs. full rebuild (intact case, 2+ days) vs. replacement (severe damage or CVT).
+- **Flush vs. Drain & Fill** (`/transmission-flush-vs-drain-and-fill`): Full system flush (~100% fluid exchange) vs. partial pan drain (30–50%); never flush a badly slipping transmission without diagnosing first.
+- **Full FAQ** (`/faq-transmission-problems`)
+- **Directions from Nearby Neighborhoods** (`/getting-to-a1-transmission`)
