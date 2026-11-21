@@ -19,26 +19,33 @@
   <script src="js/analytics-events.js" defer></script>
   <title>Transmission Repair &amp; Rebuilds in Winnetka | A1 Transmission</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="A1 Transmission in Winnetka, CA rebuilds transmissions and repairs brakes, clutches, and differentials. Since 1995. Diagnosis is free unless the unit must be opened. (818) 882-5135.">
+  <meta name="description" content="Transmission repair &amp; rebuilds in Winnetka, CA since 1995. Free initial diagnosis unless unit must be opened. 1-yr/12k-mi warranty. Call (818) 882-5135.">
   <link rel="canonical" href="https://a1transmissionautos.com/">
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="US-CA">
   <meta name="geo.placename" content="Winnetka, CA">
+  <meta name="geo.position" content="34.208161;-118.572753">
   <!-- Open Graph -->
   <meta property="og:title" content="Transmission Repair &amp; Rebuilds in Winnetka | A1 Transmission">
-  <meta property="og:description" content="A1 Transmission in Winnetka, CA rebuilds transmissions and repairs brakes, clutches, and differentials. Since 1995. Diagnosis is free unless the unit must be opened. (818) 882-5135.">
+  <meta property="og:description" content="Transmission repair &amp; rebuilds in Winnetka, CA since 1995. Free initial diagnosis unless unit must be opened. 1-yr/12k-mi warranty. Call (818) 882-5135.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://a1transmissionautos.com/">
   <meta property="og:image" content="https://a1transmissionautos.com/img/main2.jpg">
   <meta property="og:image:alt" content="Open car engine bay, the hero image on the A1 Transmission site">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Transmission Repair &amp; Rebuilds in Winnetka | A1 Transmission">
+  <meta name="twitter:description" content="Transmission repair &amp; rebuilds in Winnetka, CA since 1995. Free initial diagnosis unless unit must be opened. 1-yr/12k-mi warranty. Call (818) 882-5135.">
+  <meta name="twitter:image" content="https://a1transmissionautos.com/img/main2.jpg">
+  <meta name="twitter:image:alt" content="Open car engine bay, the hero image on the A1 Transmission site">
 
   <!-- Favicon -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
+  <!-- Preload Hero LCP Image & Fonts -->
+  <link rel="preload" as="image" href="img/main2-sm.webp" type="image/webp" media="(max-width: 991px)" fetchpriority="high">
+  <link rel="preload" as="image" href="img/main2.webp" type="image/webp" media="(min-width: 992px)" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2">
@@ -51,89 +58,177 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Animate.css -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Local Business Structured Data -->
+  <!-- Structured Data: AutoRepair, WebSite, Reviews & FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "@id": "https://a1transmissionautos.com/#business",
-    "name": "A1 Transmission",
-    "url": "https://a1transmissionautos.com/",
-    "image": "https://a1transmissionautos.com/img/logo.png",
-    "telephone": "+18188825135",
-    "email": "Kf6ymf@gmail.com",
-    "foundingDate": "1995-04",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "20146 Saticoy Street B1",
-      "addressLocality": "Winnetka",
-      "addressRegion": "CA",
-      "postalCode": "91306",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.208161,
-      "longitude": -118.572753
-    },
-    "hasMap": "https://www.google.com/maps?cid=11650980247790917953",
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
+        "@type": "WebSite",
+        "@id": "https://a1transmissionautos.com/#website",
+        "url": "https://a1transmissionautos.com/",
+        "name": "A1 Transmission",
+        "publisher": {
+          "@id": "https://a1transmissionautos.com/#business"
+        },
+        "inLanguage": "en-US"
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "12:00"
+        "@type": "AutoRepair",
+        "@id": "https://a1transmissionautos.com/#business",
+        "name": "A1 Transmission",
+        "url": "https://a1transmissionautos.com/",
+        "image": "https://a1transmissionautos.com/img/logo.png",
+        "telephone": "+18188825135",
+        "email": "Kf6ymf@gmail.com",
+        "foundingDate": "1995-04",
+        "description": "Independent family-owned transmission and drivetrain repair shop in Winnetka, CA serving the San Fernando Valley since April 1995. Free initial transmission diagnosis unless the transmission must be removed and opened. 1-year / 12,000-mile warranty on parts and labor.",
+        "employee": {
+          "@type": "Person",
+          "@id": "https://a1transmissionautos.com/#young",
+          "name": "Young",
+          "jobTitle": "Lead Technician & Shop Owner"
+        },
+        "knowsAbout": [
+          "Automatic transmission rebuild and repair",
+          "Manual transmission repair",
+          "CVT transmission replacement",
+          "Transmission fluid flush",
+          "Clutch service and replacement",
+          "Differential and drive shaft repair",
+          "Transfer case and 4x4 repair",
+          "Brake repair and brake fluid service",
+          "Transmission diagnostics"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "20146 Saticoy Street B1",
+          "addressLocality": "Winnetka",
+          "addressRegion": "CA",
+          "postalCode": "91306",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.208161,
+          "longitude": -118.572753
+        },
+        "hasMap": "https://www.google.com/maps?cid=11650980247790917953",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "12:00"
+          }
+        ],
+        "areaServed": [
+          {"@type": "City", "name": "Winnetka"},
+          {"@type": "City", "name": "Canoga Park"},
+          {"@type": "City", "name": "Reseda"},
+          {"@type": "City", "name": "Northridge"},
+          {"@type": "City", "name": "Woodland Hills"},
+          {"@type": "City", "name": "Tarzana"},
+          {"@type": "City", "name": "Chatsworth"},
+          {"@type": "City", "name": "West Hills"},
+          {"@type": "City", "name": "Van Nuys"},
+          {"@type": "AdministrativeArea", "name": "San Fernando Valley"}
+        ],
+        "sameAs": [
+          "https://www.google.com/maps?cid=11650980247790917953",
+          "https://www.mapquest.com/us/california/a1-transmission-272918556",
+          "https://mechanicrank.com/m/a1-transmission/"
+        ],
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Auto Repair Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transmission Rebuild & Repair", "url": "https://a1transmissionautos.com/transmission-repair-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CVT Transmission Replacement", "url": "https://a1transmissionautos.com/cvt-transmission-replacement-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transmission Flush Service", "url": "https://a1transmissionautos.com/transmission-flush-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clutch Repair", "url": "https://a1transmissionautos.com/clutch-repair-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brake Repair Service", "url": "https://a1transmissionautos.com/brake-repair-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Differential Repair", "url": "https://a1transmissionautos.com/differential-repair-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transfer Case 4x4 Service", "url": "https://a1transmissionautos.com/transfer-case-winnetka"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Free Transmission Diagnosis", "url": "https://a1transmissionautos.com/free-transmission-diagnosis"}}
+          ]
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "William K."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "A1 Transmission was able to take care of my parents' 08 Mercedes E350 for less than half what the dealer would charge. In and out in an hour. These guys really know transmissions."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Robert G."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "I took my truck to Mr. Young and he fixed it overnight. Excellent and fast service, not too expensive. Excellent customer service."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Jae H."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "This is my go-to auto shop for over a decade. Mr. Lee (Young) is honest, friendly, and very knowledgeable. I've had issues with my 370z and Porsche Cayenne — faultless repairs at an affordable price."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Kaylee L."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "I went to Young for my Honda Accord 2009 and Hyundai Sonata 2011. He's always been up front about diagnostic prices and transparent throughout the entire process."
+          }
+        ]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "00:00",
-        "closes": "00:00"
+        "@type": "FAQPage",
+        "@id": "https://a1transmissionautos.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is transmission diagnosis really free at A1 Transmission?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Initial transmission diagnosis is free unless the transmission must be removed and opened to inspect internal damage. If removal and teardown are needed, we tell you up front before any work starts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a transmission rebuild take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A full transmission rebuild usually takes 2 days or more, depending on the vehicle, internal damage found during diagnosis, and parts availability."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What warranty does A1 Transmission offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A1 Transmission backs repair work with a 1-year / 12,000-mile warranty on parts and labor, whichever comes first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you rebuild or replace CVT transmissions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CVTs are usually replaced rather than rebuilt. After a free initial diagnosis (unless the unit must be opened), we give you a written explanation and estimate before any work starts."
+            }
+          }
+        ]
       }
-    ],
-    "areaServed": [
-      {"@type": "City", "name": "Winnetka"},
-      {"@type": "City", "name": "Canoga Park"},
-      {"@type": "City", "name": "Reseda"},
-      {"@type": "City", "name": "Northridge"},
-      {"@type": "City", "name": "Woodland Hills"},
-      {"@type": "City", "name": "Tarzana"},
-      {"@type": "City", "name": "Chatsworth"},
-      {"@type": "City", "name": "West Hills"},
-      {"@type": "City", "name": "Van Nuys"},
-      {"@type": "AdministrativeArea", "name": "San Fernando Valley"}
-    ],
-    "sameAs": [
-      "https://www.google.com/maps?cid=11650980247790917953",
-      "https://www.mapquest.com/us/california/a1-transmission-272918556",
-      "https://mechanicrank.com/m/a1-transmission/"
-    ],
-    "priceRange": "$$",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Auto Repair Services",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transmission Rebuild & Repair"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transmission Flush Service"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clutch Repair"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brake Repair Service"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Differential Repair"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Transfer Case 4x4 Service"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Free Transmission Diagnosis"}}
-      ]
-    }
+    ]
   }
   </script>
 </head>
@@ -160,7 +255,8 @@
               <a class="nav-link" href="#services">Services</a>
               <button class="nav-caret dropdown-toggle" type="button" aria-label="Show services"></button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Transmission repair</a></li>
+                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Transmission repair &amp; rebuild</a></li>
+                <li><a class="dropdown-item" href="/cvt-transmission-replacement-winnetka">CVT transmission replacement</a></li>
                 <li><a class="dropdown-item" href="/transmission-flush-winnetka">Transmission flush</a></li>
                 <li><a class="dropdown-item" href="/clutch-repair-winnetka">Clutch repair</a></li>
                 <li><a class="dropdown-item" href="/brake-repair-winnetka">Brake repair</a></li>
@@ -170,11 +266,13 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <span class="nav-link">Areas</span>
-              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show areas"></button>
+              <span class="nav-link">Guides</span>
+              <button class="nav-caret dropdown-toggle" type="button" aria-label="Show guides"></button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/transmission-repair-winnetka">Winnetka</a></li>
-                <li><a class="dropdown-item" href="/getting-to-a1-transmission">Getting here / Nearby areas</a></li>
+                <li><a class="dropdown-item" href="/transmission-warning-signs">Transmission warning signs</a></li>
+                <li><a class="dropdown-item" href="/transmission-rebuild-vs-replace">Rebuild vs. replace guide</a></li>
+                <li><a class="dropdown-item" href="/faq-transmission-problems">Transmission problems FAQ</a></li>
+                <li><a class="dropdown-item" href="/getting-to-a1-transmission">Directions &amp; nearby areas</a></li>
               </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="/faq-transmission-problems">FAQ</a></li>
@@ -194,9 +292,13 @@
       <div class="hero-overlay"></div>
       <div class="hero-container">
         <h1>Transmission Repair &amp; Rebuilds in Winnetka, CA</h1>
-        <p class="hero-location">Winnetka, CA</p>
+        <p class="hero-location">20146 Saticoy Street B1, Winnetka, CA 91306 &bull; Serving the San Fernando Valley Since 1995</p>
         <p class="hero-tagline">"The job done right with <strong>YOU</strong> in mind"</p>
-        <a href="#services" class="btn-get-started">Our Services</a>
+        <p class="hero-trust">Free Initial Diagnosis* &bull; Written Estimate Before Work Starts &bull; 1-Year / 12,000-Mile Warranty</p>
+        <div class="hero-actions">
+          <a href="tel:+18188825135" class="btn-get-started">Call (818) 882-5135</a>
+          <a href="#quote-form" class="btn-hero-secondary">Request Free Diagnosis</a>
+        </div>
       </div>
     </section>
 
@@ -208,21 +310,21 @@
         <div class="section-header">
           <h2 id="about-heading" class="section-title">Over 30 Years of Auto Repair Experience</h2>
           <div class="section-divider"></div>
-          <p class="section-description">Serving Winnetka &amp; the San Fernando Valley since 1995</p>
+          <p class="section-description">Independent, family-owned transmission shop serving Winnetka, Canoga Park &amp; the San Fernando Valley since April 1995</p>
         </div>
         <div class="row align-items-center g-5">
-          <div class="col-lg-6 wow fadeInLeft">
-            <div class="about-img"></div>
+          <div class="col-lg-6">
+            <div class="about-img" role="img" aria-label="Automotive repair work at A1 Transmission in Winnetka, CA"></div>
           </div>
-          <div class="col-lg-6 wow fadeInRight">
-            <p class="about-intro">We are dedicated to our clients' satisfaction by providing:</p>
+          <div class="col-lg-6">
+            <p class="about-intro">We work on almost all makes and models — domestic, Japanese, Korean, and European — and focus on clear answers before any repair begins:</p>
             <div class="feature-card">
               <div class="feature-icon">
                 <i class="fas fa-thumbs-up"></i>
               </div>
               <div class="feature-content">
                 <h3>Best in Class Services</h3>
-                <p>Our technicians have 30+ years of experience and knowledge to repair your vehicle right the first time.</p>
+                <p>Led by Young with 30+ years of hands-on transmission and drivetrain experience to diagnose and fix your vehicle right the first time.</p>
               </div>
             </div>
             <div class="feature-card">
@@ -231,7 +333,7 @@
               </div>
               <div class="feature-content">
                 <h3>Best in Value</h3>
-                <p>The shop offers a 1-year / 12,000-mile warranty on parts and labor (whichever comes first). <a href="/transmission-repair-winnetka">Transmission repair and rebuild in Winnetka</a>. Canoga Park drivers use the same shop. <a href="/getting-to-a1-transmission">Directions from Canoga Park and nearby neighborhoods</a>.</p>
+                <p>Every repair is backed by a 1-year / 12,000-mile warranty on parts and labor (whichever comes first). <a href="/transmission-repair-winnetka">Transmission repair and rebuild in Winnetka</a>. Canoga Park drivers use the same Winnetka shop — <a href="/getting-to-a1-transmission">directions from Canoga Park and nearby neighborhoods</a>.</p>
               </div>
             </div>
             <div class="feature-card">
@@ -240,7 +342,7 @@
               </div>
               <div class="feature-content">
                 <h3>Free Diagnosis</h3>
-                <p>Transmission diagnosis is free unless the transmission must be removed and opened. <a href="/free-transmission-diagnosis">What the free transmission diagnosis includes</a>.</p>
+                <p>Transmission diagnosis is free unless the transmission must be removed and opened. Afterward you receive a written explanation and estimate. <a href="/free-transmission-diagnosis">See what the free transmission diagnosis includes</a>.</p>
               </div>
             </div>
           </div>
@@ -253,14 +355,14 @@
     ============================-->
     <section id="call-to-action">
       <div class="container">
-        <div class="cta-inner wow fadeIn">
+        <div class="cta-inner">
           <div class="row align-items-center">
             <div class="col-lg-8">
-              <h2>Get Your Free Quote Today</h2>
-              <p>Call or email us at your convenience and be amazed by our value-packed repair services!</p>
+              <h2>Get Your Free Diagnosis &amp; Written Estimate</h2>
+              <p>Slipping gears, delayed shifting, warning light, or a leak? Call, text, or send your vehicle details for honest answers before any work starts.</p>
             </div>
             <div class="col-lg-4 text-lg-end text-center mt-3 mt-lg-0">
-              <a class="cta-btn" href="#contact">Contact Us</a>
+              <a class="cta-btn" href="#quote-form">Request Free Diagnosis</a>
             </div>
           </div>
         </div>
@@ -275,68 +377,68 @@
         <div class="section-header">
           <h2 id="services-heading" class="section-title">Professional Auto &amp; Transmission Services in Winnetka</h2>
           <div class="section-divider"></div>
-          <p class="section-description">Transmission rebuilds, brake service, clutch repair, and more. 1-year / 12,000-mile warranty on parts and labor (whichever comes first).</p>
+          <p class="section-description">Transmission rebuilds, CVT replacement, brake service, clutch repair, and drivetrain work. 1-year / 12,000-mile warranty on parts and labor (whichever comes first).</p>
         </div>
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-tools"></i>
               </div>
               <h3>Automatic &amp; Manual Transmission Rebuild &amp; Repair</h3>
-              <a href="/transmission-repair-winnetka" class="service-link">Transmission repair &amp; rebuild in Winnetka</a>
+              <a href="/transmission-repair-winnetka" class="service-link">Transmission repair &amp; rebuild in Winnetka &rarr;</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-oil-can"></i>
               </div>
               <h3>Transmission Full Fluid Flush Service</h3>
-              <a href="/transmission-flush-winnetka" class="service-link">Learn More &rarr;</a>
+              <a href="/transmission-flush-winnetka" class="service-link">Transmission fluid flush in Winnetka &rarr;</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-screwdriver-wrench"></i>
               </div>
               <h3>Axle Differential Repair &amp; Drive Shaft Replacements</h3>
-              <a href="/differential-repair-winnetka" class="service-link">Learn More &rarr;</a>
+              <a href="/differential-repair-winnetka" class="service-link">Differential &amp; drive shaft repair &rarr;</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-truck-monster"></i>
               </div>
               <h3>Transfer Case 4x4</h3>
-              <a href="/transfer-case-winnetka" class="service-link">Learn More &rarr;</a>
+              <a href="/transfer-case-winnetka" class="service-link">Transfer case &amp; 4x4 service &rarr;</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-gear"></i>
               </div>
               <h3>Clutch Service &amp; Repair</h3>
-              <a href="/clutch-repair-winnetka" class="service-link">Learn More &rarr;</a>
+              <a href="/clutch-repair-winnetka" class="service-link">Manual clutch repair &amp; replacement &rarr;</a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+          <div class="col-lg-4 col-md-6">
             <div class="service-card">
               <div class="service-icon">
                 <i class="fas fa-circle-stop"></i>
               </div>
               <h3>Brake Repair Service &amp; Brake System Fluid Services</h3>
-              <a href="/brake-repair-winnetka" class="service-link">Learn More &rarr;</a>
+              <a href="/brake-repair-winnetka" class="service-link">Brake repair &amp; fluid service &rarr;</a>
             </div>
           </div>
         </div>
-        <div class="text-center mt-5 wow fadeInUp">
-          <p class="services-more">Call for a <a href="/free-transmission-diagnosis">free transmission diagnosis</a>. It is free unless the transmission must be removed and opened.</p>
+        <div class="text-center mt-5">
+          <p class="services-more">Drive a CVT vehicle? <a href="/cvt-transmission-replacement-winnetka">CVT transmission replacement in Winnetka</a> &bull; Not sure what you need? Read <a href="/transmission-rebuild-vs-replace">Rebuild vs. Replace</a> or check <a href="/transmission-warning-signs">Transmission Warning Signs</a>.</p>
+          <p class="services-more mt-3">Call for a <a href="/free-transmission-diagnosis">free transmission diagnosis</a> (free unless the transmission must be removed and opened).</p>
           <p class="services-more mt-3"><a href="/transmission-repair-winnetka">Transmission repair and rebuild in Winnetka</a> is done at 20146 Saticoy Street. Winnetka borders Canoga Park, and there is no second storefront. <a href="/getting-to-a1-transmission">Directions from Canoga Park and nearby neighborhoods</a>.</p>
-          <p class="services-more mt-2"><a href="/faq-transmission-problems">Transmission problems FAQ</a> — warning signs, cost, time, and warranty for Winnetka and Canoga Park drivers.</p>
         </div>
       </div>
     </section>
@@ -349,12 +451,12 @@
         <div class="section-header">
           <h2 id="reviews-heading" class="section-title">What Our Customers Say</h2>
           <div class="section-divider"></div>
-          <p class="section-description">Don't just take our word for it — hear from our satisfied customers!</p>
+          <p class="section-description">Don't just take our word for it — hear from San Fernando Valley drivers we've helped!</p>
         </div>
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-3 col-md-6">
             <div class="review-card">
-              <div class="review-stars">
+              <div class="review-stars" aria-label="5 out of 5 stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
               <p>"[A1 Transmission] was able to take care of my parents' 08 Mercedes E350… less than half what the dealer would charge. In and out in an hour. These guys really know transmissions."</p>
@@ -367,9 +469,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-3 col-md-6">
             <div class="review-card">
-              <div class="review-stars">
+              <div class="review-stars" aria-label="5 out of 5 stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
               <p>"I took my truck to Mr. Young and he fixed it overnight. Excellent and fast service, not too expensive. Excellent customer service."</p>
@@ -382,9 +484,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-3 col-md-6">
             <div class="review-card">
-              <div class="review-stars">
+              <div class="review-stars" aria-label="5 out of 5 stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
               <p>"This is my go-to auto shop for over a decade. Mr. Lee (Young) is honest, friendly, and very knowledgeable. I've had issues with my 370z and Porsche Cayenne — faultless repairs at an affordable price."</p>
@@ -397,9 +499,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-3 col-md-6">
             <div class="review-card">
-              <div class="review-stars">
+              <div class="review-stars" aria-label="5 out of 5 stars">
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
               <p>"I went to Young for my Honda Accord 2009 and Hyundai Sonata 2011. He's always been up front about diagnostic prices and transparent throughout the entire process."</p>
@@ -417,6 +519,48 @@
     </section>
 
     <!--==========================
+      Homepage Mini-FAQ Section
+    ============================-->
+    <section id="home-faq" aria-labelledby="home-faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="home-faq-heading" class="section-title">Common Transmission Questions</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">Straight answers on diagnosis, turnaround time, warranty, and CVTs</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="faq-home-card">
+              <h3>Is transmission diagnosis really free at A1 Transmission?</h3>
+              <p>Yes. Initial transmission diagnosis is free unless the transmission must be removed and opened to inspect internal damage. If removal and teardown are needed, we tell you up front before any work starts.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="faq-home-card">
+              <h3>How long does a transmission rebuild take?</h3>
+              <p>A full transmission rebuild usually takes 2 days or more, depending on the vehicle, internal damage found during diagnosis, and parts availability.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="faq-home-card">
+              <h3>What warranty does A1 Transmission offer?</h3>
+              <p>A1 Transmission backs repair work with a 1-year / 12,000-mile warranty on parts and labor, whichever comes first.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="faq-home-card">
+              <h3>Do you rebuild or replace CVT transmissions?</h3>
+              <p>CVTs are usually replaced rather than rebuilt. After a free initial diagnosis (unless the unit must be opened), we give you a written explanation and estimate before any work starts. <a href="/cvt-transmission-replacement-winnetka">Read our CVT guide</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="/faq-transmission-problems" class="service-link">Read the full Transmission Problems FAQ &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
       Contact Section
     ============================-->
     <section id="contact" aria-labelledby="contact-heading">
@@ -428,7 +572,7 @@
         </div>
       </div>
 
-      <div class="map-container wow fadeIn">
+      <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28984.42487224644!2d-118.59094341911464!3d34.21267966335696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1b098ce4aab9941!2sA1%20Transmission!5e0!3m2!1sen!2sus!4v1590011730728!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps location of A1 Transmission"></iframe>
       </div>
       <div class="container">
@@ -437,7 +581,7 @@
 
       <div class="container mt-5">
         <div class="row justify-content-center g-4">
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-3 col-md-6">
             <div class="contact-card">
               <div class="contact-icon">
                 <i class="fas fa-location-dot"></i>
@@ -446,7 +590,7 @@
               <p>20146 Saticoy Street B1<br>Winnetka, CA 91306</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-3 col-md-6">
             <div class="contact-card">
               <div class="contact-icon">
                 <i class="fas fa-clock"></i>
@@ -455,7 +599,7 @@
               <p><strong>Mon–Fri</strong> 8:00 AM – 6:00 PM<br><strong>Saturday</strong> 8:00 AM – 12:00 PM<br><strong>Sunday</strong> Closed</p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="col-lg-3 col-md-6">
             <div class="contact-card">
               <div class="contact-icon">
                 <i class="fas fa-phone"></i>
@@ -464,11 +608,11 @@
               <p>
                 <a href="tel:+18188825135"><i class="fas fa-phone"></i> (818) 882-5135</a>
                 &nbsp;&nbsp;
-                <a href="sms:+18188825135" title="Send a text"><i class="fas fa-sms"></i></a>
+                <a href="sms:+18188825135" title="Send a text" aria-label="Text A1 Transmission at (818) 882-5135"><i class="fas fa-sms"></i></a>
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-lg-3 col-md-6">
             <div class="contact-card">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
@@ -477,6 +621,65 @@
               <p><a href="mailto:Kf6ymf@gmail.com">Kf6ymf@gmail.com</a></p>
             </div>
           </div>
+        </div>
+
+        <!-- Netlify Free Diagnosis / Quote Request Form -->
+        <div id="quote-form" class="quote-form-card">
+          <h3>Request a Free Transmission Diagnosis or Estimate</h3>
+          <p class="quote-form-sub">Tell us your vehicle and what you're experiencing. Diagnosis is free unless the transmission must be removed and opened. For fastest response during shop hours, call or text <a href="tel:+18188825135">(818) 882-5135</a>.</p>
+          <form id="diagnosis-quote-form" name="diagnosis-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="diagnosis-request">
+            <p class="visually-hidden">
+              <label>Don't fill this out if you're human: <input name="bot-field"></label>
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="qf-name" class="form-label">Your Name *</label>
+                <input type="text" class="form-control" id="qf-name" name="name" required autocomplete="name" placeholder="First and last name">
+              </div>
+              <div class="col-md-6">
+                <label for="qf-phone" class="form-label">Phone Number (Call or Text) *</label>
+                <input type="tel" class="form-control" id="qf-phone" name="phone" required autocomplete="tel" placeholder="(818) 555-1234">
+              </div>
+              <div class="col-md-6">
+                <label for="qf-vehicle" class="form-label">Year, Make &amp; Model *</label>
+                <input type="text" class="form-control" id="qf-vehicle" name="vehicle" required placeholder="e.g., 2016 Honda Accord">
+              </div>
+              <div class="col-md-6">
+                <label for="qf-service" class="form-label">Service or Symptom</label>
+                <select class="form-select" id="qf-service" name="service">
+                  <option value="Free transmission diagnosis">Free transmission diagnosis</option>
+                  <option value="Slipping / not shifting / hard shift">Slipping / not shifting / hard shift</option>
+                  <option value="CVT transmission issue">CVT transmission issue</option>
+                  <option value="Transmission fluid flush">Transmission fluid flush</option>
+                  <option value="Clutch repair or replacement">Clutch repair or replacement</option>
+                  <option value="Differential or transfer case">Differential or transfer case</option>
+                  <option value="Brake repair">Brake repair</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="qf-contact-pref" class="form-label">Preferred Contact Method</label>
+                <select class="form-select" id="qf-contact-pref" name="contact_preference">
+                  <option value="Text message">Text message</option>
+                  <option value="Phone call">Phone call</option>
+                  <option value="Email">Email</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="qf-email" class="form-label">Email (Optional)</label>
+                <input type="email" class="form-control" id="qf-email" name="email" autocomplete="email" placeholder="you@example.com">
+              </div>
+              <div class="col-12">
+                <label for="qf-notes" class="form-label">What is the car doing? (Optional)</label>
+                <textarea class="form-control" id="qf-notes" name="notes" rows="3" placeholder="Any warning lights, fluid leaks, noises, or when the issue happens"></textarea>
+              </div>
+              <div class="col-12 mt-3">
+                <button type="submit" class="quote-form-submit">Request Free Diagnosis</button>
+                <div id="quote-form-status" class="quote-form-status" role="status" aria-live="polite"></div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -497,7 +700,9 @@
           <a href="/">Home</a>
           <a href="/#about">About</a>
           <a href="/#services">Services</a>
-          <a href="/#reviews">Reviews</a>
+          <a href="/cvt-transmission-replacement-winnetka">CVT Replacement</a>
+          <a href="/transmission-rebuild-vs-replace">Rebuild vs. Replace</a>
+          <a href="/transmission-warning-signs">Warning Signs</a>
           <a href="/faq-transmission-problems">FAQ</a>
           <a href="/transmission-repair-winnetka">Winnetka</a>
           <a href="/getting-to-a1-transmission">Getting here</a>
@@ -506,8 +711,8 @@
         </div>
         <div class="footer-contact">
           <span>
-            <a href="tel:+18188825135"><i class="fas fa-phone"></i></a>
-            <a href="sms:+18188825135" title="Send a text"><i class="fas fa-sms"></i></a>
+            <a href="tel:+18188825135" aria-label="Call A1 Transmission at (818) 882-5135"><i class="fas fa-phone"></i></a>
+            <a href="sms:+18188825135" title="Send a text" aria-label="Text A1 Transmission at (818) 882-5135"><i class="fas fa-sms"></i></a>
             (818) 882-5135
           </span>
           <span><i class="fas fa-envelope"></i> Kf6ymf@gmail.com</span>
@@ -531,16 +736,10 @@
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- jQuery -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <!-- Easing -->
-  <script src="lib/easing/easing.min.js"></script>
-  <!-- WOW.js -->
-  <script src="lib/wow/wow.min.js"></script>
   <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Main JS -->
-  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Main JS (vanilla, zero jQuery/WOW overhead) -->
+  <script src="js/main.js" defer></script>
 
 </body>
 </html>
