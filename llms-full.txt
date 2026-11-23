@@ -48,3 +48,4 @@
 - **Flush vs. Drain & Fill** (`/transmission-flush-vs-drain-and-fill`): Full system flush (~100% fluid exchange) vs. partial pan drain (30–50%); never flush a badly slipping transmission without diagnosing first.
 - **Full FAQ** (`/faq-transmission-problems`)
 - **Directions from Nearby Neighborhoods** (`/getting-to-a1-transmission`)
+- **Korean-Language Guide (한국어 안내)** (`/ko-transmission-repair-winnetka`): Korean-language transmission repair, rebuild, and CVT replacement guide for San Fernando Valley (Winnetka, Northridge, Granada Hills, Porter Ranch, Canoga Park, Woodland Hills) drivers.
